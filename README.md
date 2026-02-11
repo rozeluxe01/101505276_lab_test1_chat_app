@@ -1,11 +1,11 @@
-Chat Application — COMP3133 Lab Test 1
+### Chat Application — COMP3133 Lab Test 1
 
 A real-time chat application built using React, TailwindCSS, Node.js, Express, Socket.io, and MongoDB Atlas.
 
 Users can register, log in, join chat rooms, send group messages, send private messages, and see real-time typing indicators and online users.
 
-Features
-Authentication
+### Features
+### Authentication
 
 User signup and login stored securely in MongoDB Atlas
 
@@ -13,7 +13,7 @@ Validation for duplicate usernames
 
 User session stored via React Context
 
-Group Chat
+### Group Chat
 
 Predefined rooms:
 
@@ -35,7 +35,7 @@ Typing indicator ("username is typing…")
 
 Messages stored in MongoDB (GroupMessage collection)
 
-Private Messaging (DM)
+### Private Messaging (DM)
 
 Displays online users
 
@@ -47,7 +47,7 @@ Only sender & receiver can see the conversation
 
 Stored in MongoDB (PrivateMessage collection)
 
-Real-Time Updates
+### Real-Time Updates
 
 Powered by Socket.io:
 
@@ -59,7 +59,7 @@ Live typing indicator
 
 Online user presence tracking
 
-Frontend (Client)
+### Frontend (Client)
 
 Built with React + Vite
 
@@ -69,7 +69,7 @@ Context API for auth and socket management
 
 Fully responsive UI
 
-Backend (Server)
+### Backend (Server)
 
 Express REST API for authentication
 
@@ -79,8 +79,8 @@ MongoDB Atlas database
 
 Mongoose schemas for Users, Group Messages, and Private Messages
 
-Technologies Used
-Frontend
+### Technologies Used
+### Frontend
 
 React (Vite)
 
@@ -90,7 +90,7 @@ React Router
 
 Socket.io Client
 
-Backend
+### Backend
 
 Node.js
 
@@ -104,29 +104,32 @@ dotenv
 
 MongoDB Atlas
 
-📂 Project Structure
+### Project Structure
+```
 root/
- ├── client/            # React + Tailwind frontend
+ ├── client/                     # React + Tailwind frontend
  │   ├── src/
- │   │   ├── pages/     # Login, Signup, Chat pages
- │   │   ├── context/   # AuthContext, SocketContext
- │   │   ├── components/
+ │   │   ├── pages/              # Login, Signup, Chat pages
+ │   │   ├── context/            # AuthContext, SocketContext
+ │   │   ├── components/         # Reusable UI components
+ │   │   └── ...
  │   └── ...
  │
- ├── server/            # Node.js backend
- │   ├── models/        # User, GroupMessage, PrivateMessage schemas
- │   ├── routes/        # auth routes
- │   ├── server.js
- │   └── .env
+ ├── server/                     # Node.js backend
+ │   ├── models/                 # User, GroupMessage, PrivateMessage schemas
+ │   ├── routes/                 # Authentication routes
+ │   ├── server.js               # Main Express + Socket.io server
+ │   └── .env                    # Environment variables
  │
  └── README.md
+```
 
-Setup Instructions
+### Setup Instructions
 Clone the project
-git clone <your-repo-url>
+git clone https://github.com/rozeluxe01/101505276_lab_test1_chat_app.git
 cd 101505276_lab_test1_chat_app
 
-Backend Setup (server)
+### Backend Setup (server)
 cd server
 npm install
 
@@ -134,7 +137,7 @@ Create .env inside /server
 MONGO_URI=mongodb+srv://<username>:<password>@cluster0.xxxxxx.mongodb.net/chat_app
 PORT=3000
 
-Start backend
+### Start backend
 node server.js
 
 
@@ -143,17 +146,17 @@ You should see:
 Connected to MongoDB Atlas
 Server running on port 3000
 
-💻 Frontend Setup (client)
+### Frontend Setup (client)
 cd client
 npm install
 npm run dev
 
 
-Visit:
+### Visit:
 
-👉 http://localhost:5173
+http://localhost:5173
 
-📡 MongoDB Models
+MongoDB Models
 Users
 
 Stored in users collection:
@@ -188,7 +191,7 @@ Stored in privatemessages:
   date_sent: Date
 }
 
-🧪 How to Test
+### How to Test
 
 Open two browsers or incognito windows
 
@@ -214,7 +217,7 @@ groupmessages
 
 privatemessages
 
-📝 Notes for Instructor
+### Notes for Instructor
 
 This version uses:
 
@@ -228,7 +231,7 @@ Clean and modular folder structure
 
 All lab test requirements have been implemented with an enhanced UI.
 
-👤 Author
+### Author
 
 Student Name: Kevin George Buhain
 Student ID: 101505276
