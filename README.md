@@ -234,6 +234,9 @@ All lab test requirements have been implemented with an enhanced UI.
 ### Author
 
 Student Name: Kevin George Buhain
+
 Student ID: 101505276
+
 COMP3133 — Lab Test 1
+
 George Brown College
